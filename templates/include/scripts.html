@@ -1,0 +1,38 @@
+<script type="text/javascript" src="/media/system/js/mootools.js"></script>
+<script type="text/javascript" src="/media/system/js/caption.js"></script>
+<script type="text/javascript" src="/media/widgetkit/js/jquery.js"></script>
+<script type="text/javascript" src="/cache/widgetkit/widgetkit-3bcf53be.js"></script>
+<script type='text/javascript' src='/plugins/content/ja_tabs/ja_tabs.js' charset="utf-8"></script>
+<script type="text/javascript">var CF_LV_Type = 'default';</script>
+<script src="/components/com_chronocontact/js/livevalidation_standalone.js" type="text/javascript"></script>
+<script src="/templates/yoo_balance/warp/js/warp.js"></script>
+<script src="/templates/yoo_balance/warp/js/accordionmenu.js"></script>
+<script src="/templates/yoo_balance/warp/js/dropdownmenu.js"></script>
+<script src="/templates/yoo_balance/js/template.js"></script>
+<script src="/components/com_chronocontact/js/jsvalidation2.js" type="text/javascript"></script>
+<script type="text/javascript">
+	Element.extend({
+		getInputByName2:function (nome) {
+			el = this.getFormElements().filterByAttribute('name', '=', nome)
+			return (el) ? (el.length) ? el : el : false;
+		}
+	});
+	window.addEvent('domready', function () {
+		('Name,Email,Message').split(',').each(function (field) {
+			$('ChronoContact_fastfront').getInputByName2(field).addClass('required');
+		});
+		('Email').split(',').each(function (field) {
+			$('ChronoContact_fastfront').getInputByName2(field).addClass('validate-email');
+		});
+	});
+	var fieldsarray = new Array();
+	var fieldsarray_count = 0;
+	window.addEvent('domready', function () {
+		elementExtend();
+		setValidation("ChronoContact_fastfront", 1, 0, 0);
+	});</script>
+<script type="text/javascript">
+	elementExtend();
+	window.addEvent('domready', function () {
+	});
+</script>

@@ -1,0 +1,27 @@
+{% extends "layout.html.twig" %}
+{% block title %} {{ entry.title }} - {{ blog.title }} {% endblock %}
+{% block head_block %}
+	{% if entry %}
+		{% if entry.strtags %}
+			<meta name="Keywords" content="{{entry.strtags}}">{% endif %}
+		{% if entry.excerpt %}
+			<meta name="Description" content="{{entry.excerpt}}">{% endif %}
+	{% endif %}
+{% endblock %}
+{% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
+{% block content %}
+	<div style="min-height: 2160px;" id="maininner" class="grid-box">
+		<section id="content">
+			<div class="grid-block">
+				<div id="system">
+					<article class="item">
+						<header>
+							<h1 class="title">{{ entry.title }}</h1>
+						</header>
+						<div class="content clearfix">{{ entry.content }}</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</div>
+{% endblock %}

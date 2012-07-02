@@ -1,0 +1,9 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Background: Gradient Blue */
+
+/*
+
+body#page { background: #D6EEF7 url(../../images/background/gradient_blue/page.jpg) 50% 0 repeat-x; }
+*/
+body#page { background: #C4DFE6 url("../../images/texture_b.jpg") 50% 100% no-repeat ; }
