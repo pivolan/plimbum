@@ -6,8 +6,8 @@
 		<meta name="keywords" content="Разработка, создание, продвижение, сайт, ТОП, размещение, контекстная, реклама, услуги, веб-студия «Light Dream»"/>
 		<meta name="description" content="Веб-студия «Light Dream»  предоставляет услуги по разработке и созданию сайтов. Услуги продвижения сайтов в ТОП. Профессиональное размещение контекстной рекламы в интернете."/>
 		<title>{% block title %}Разработка и создание сайтов в Ижевске | Продвижение сайтов в ТОП | Размещение контекстной рекламы | Веб-студия «Light Dream»{% endblock %}</title>
-		{% include 'include/scripts.html' %}
-		{% include 'include/stylesheets.html' %}
+		{% include 'include/scripts.html.twig' %}
+		{% include 'include/stylesheets.html.twig' %}
 		{% block head_block %}{% endblock %}
 </head>
 <body id="page" class="page sidebar-a-right sidebar-b-right isblog " data-config='{"twitter":1,"plusone":1,"facebook":1,"style":"default"}'>
@@ -50,7 +50,7 @@
 	</div>
 	<div id="menubar" class="grid-block">
 		<nav id="menu">
-			{% include 'include/top_menu.html' %}
+			{% include 'include/top_menu.html.twig' %}
 		</nav>
 		<div id="menubar-r">
 			<div></div>
@@ -248,7 +248,7 @@
 {% endblock %}
 <div id="main" class="grid-block">
 	{% block content %}
-		{% include 'include/content.html' %}
+		{% include 'include/content.html.twig' %}
 	{% endblock %}
 	<!-- maininner end -->
 	<aside id="sidebar-a" class="grid-box">
@@ -423,7 +423,7 @@
 		</footer>
 	</div>
 </div>
-{% include 'include/scripts_bottom.html' %}
+{% include 'include/scripts_bottom.html.twig' %}
 
 </body>
 </html>
