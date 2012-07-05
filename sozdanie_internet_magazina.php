@@ -13,4 +13,4 @@ $twig = new Twig_Environment($loader, array(
     'debug' => true
 ));
 
-echo $twig->render('seo.html.twig');
+echo $twig->render('sozdanie_internet_magazina.html.twig');
