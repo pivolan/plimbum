@@ -252,6 +252,8 @@
 	{% endblock %}
 	<!-- maininner end -->
 	<aside id="sidebar-a" class="grid-box">
+		{% block right_a %}
+		{% block right_menu %}{% endblock %}
 		<div class="grid-box width100 grid-v">
 			<div class="module mod-box mod-box-color icon-bubble">
 				<div class="deepest">
@@ -293,6 +295,7 @@
 				</div>
 			</div>
 		</div>
+		{% endblock %}
 	</aside>
 </div>
 <!-- main end -->
