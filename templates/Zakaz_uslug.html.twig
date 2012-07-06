@@ -1,0 +1,37 @@
+{% set a6 = 'active current' %}
+{% extends "layout.html.twig" %}
+{% block title %} Заказать услуги веб-студии "Light Dream". {% endblock %}
+{% block head_block %}
+{% if entry %}
+{% if entry.strtags %}
+<meta name="Keywords"
+	  content="Заказать, услуги, веб, студия, Light, Dream.">{% endif %}
+{% if entry.excerpt %}
+<meta name="Description"
+	  content="Форма для заказа услуг создания и продвижения сайтов от веб-студии «Light Dream»">{% endif %}
+{% endif %}
+{% endblock %}
+{% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
+{% block content %}
+<div style="min-height: 2160px;" id="maininner" class="grid-box">
+	<section id="content">
+		<div class="grid-block">
+			<div id="system">
+				<article class="item">
+					<header>
+						<h1 class="title">Заказать услуги"</h1>
+					</header>
+					<div class="content clearfix">
+						<h2>Форма.</h2>
+
+						<p> Заполнить форму. </p>
+
+						<p>
+
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %}

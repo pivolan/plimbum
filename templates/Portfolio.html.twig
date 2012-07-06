@@ -1,0 +1,37 @@
+{% set a5 = 'active current' %}
+{% extends "layout.html.twig" %}
+{% block title %} Портфолио Веб студии "Light Dream". {% endblock %}
+{% block head_block %}
+{% if entry %}
+{% if entry.strtags %}
+<meta name="Keywords"
+	  content="Портфолио, веб, студия, Light, Dream.">{% endif %}
+{% if entry.excerpt %}
+<meta name="Description"
+	  content="Портфолио и готовые проекты веб-студии «Light Dream».">{% endif %}
+{% endif %}
+{% endblock %}
+{% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
+{% block content %}
+<div style="min-height: 2160px;" id="maininner" class="grid-box">
+	<section id="content">
+		<div class="grid-block">
+			<div id="system">
+				<article class="item">
+					<header>
+						<h1 class="title">Портфолио веб студии "Light Dream"</h1>
+					</header>
+					<div class="content clearfix">
+						<h2>Наши работы.</h2>
+
+						<p> Страница находится в стадии разработки, в ближайшее время мы выложим галерею наших работ. </p>
+
+						<p>
+
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %}
