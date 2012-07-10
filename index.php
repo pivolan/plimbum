@@ -1,4 +1,13 @@
 <?php
+session_start();
+if($_GET['a']=='sda')
+{
+	$_SESSION['okda'] = true;
+}
+if(!$_SESSION['okda'])
+{
+	die;
+}
 /**
  * Created by JetBrains PhpStorm.
  * User: PiVo
