@@ -1,0 +1,71 @@
+
+{% extends "layout.html.twig" %}
+{% block title %} Карта сайта. {% endblock %}
+{% block head_block %}
+{% if entry %}
+{% if entry.strtags %}
+<meta name="Keywords"
+	  content="сайт, карта.">{% endif %}
+{% if entry.excerpt %}
+<meta name="Description"
+	  content="Карта сайта Веб-студии Light Dream">{% endif %}
+{% endif %}
+{% endblock %}
+{% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
+{% block content %}
+<div style="min-height: 2160px;" id="maininner" class="grid-box">
+	<section id="content">
+		<div class="grid-block">
+			<div id="system">
+				<article class="item">
+					<header>
+						<h1 class="title">Карта сайта</h1>
+					</header>
+					<div class="xmap"><div class="componentheading">SiteMap</div><div class="contentpaneopen"><h2 class="menutitle">Меню сайта</h2>
+						<ul class="level_0">
+							<li><a href="http://lightdreamstudio.ru/" title="Главная || LightDream.ru">Главная || LightDream.ru</a></li>
+							<li><a href="/sozdanie_saytov.php" title="Разработка и создание сайтов">Разработка и создание сайтов</a>
+								<ul class="level_1">
+									<li><a href="/Sozdanie_sayta_vizitki.php" title="Создание сайта визитки | Заказать сайт визитку">Создание сайта визитки | Заказать сайт визитку</a></li>
+									<li><a href="/Sozdanie_korporativnyh_saytov.php" title="Создание корпоративных сайтов| Создать официальный сайт">Создание корпоративных сайтов| Создать официальный сайт</a></li>
+									<li><a href="/Zakazat_sozdanie_internet_magazina.php" title="Создание интернет магазина | Заказать интернет магазин">Создание интернет магазина | Заказать интернет магазин</a></li>
+									<li><a href="/Podderzhka_i_obsluzhivanie_saytov.php" title="Поддержка сайтов | Обслуживание сайтов">Поддержка сайтов | Обслуживание сайтов</a></li>
+									<li><a href="/stoimost_sozdaniya_saytov.php" title="Стоимость создания сайтов">Стоимость создания сайтов</a></li>
+
+								</ul>
+							</li><li><a href="/Prodvizhenie_saytov.php" title="Продвижение сайтов">Продвижение сайтов</a>
+							<ul class="level_1">
+								<li><a href="/poiskovaya_optimizaciya_saytov.php" title="Поисковая оптимизация сайтов">Поисковая оптимизация сайтов</a></li>
+								<li><a href="/Prodvizhenie_i_raskrutka_saytov.php" title="Продвижение и раскрутка сайтов | Вывод сайта в ТОП">Продвижение и раскрутка сайтов | Вывод сайта в ТОП</a></li>
+								<li><a href="/Kontekstnaya_reklama.php" title="Контекстная реклама Яндекс, Google">Контекстная реклама Яндекс, Google</a></li>
+								<li><a href="/seo_copywriting.php" title="SEO копирайтинг | написание текстов">SEO копирайтинг | написание текстов</a></li>
+								<li><a href="/stoimost_sozdaniya_saytov.php" title="Цены на продвижение сайтов">Цены на продвижение сайтов</a></li>
+							</ul>
+						</li><li><a href="/Gotovye_sayty.php" title="Готовые сайты от веб-студии «Light Dream»">Готовые сайты от веб-студии «Light Dream»</a>
+							<ul class="level_1">
+								<li><a href="/sayty_za_15000.php" title="Шаблоны сайтов за 15000 руб">Шаблоны сайтов за 15000 руб</a></li>
+								<li><a href="/sayty_za_25000.php" title="Шаблоны сайтов за 25000 руб">Шаблоны сайтов за 25000 руб</a></li>
+								<li><a href="/sayty_za_40000.php" title="Шаблоны сайтов за 40000 руб">Шаблоны сайтов за 40000 руб</a></li>
+
+							</ul>
+						</li><li><a href="/web_studiya_Lightdream.php" title="О нас | Веб студия «Light Dream">О нас | Веб студия «Light Dream»</a>
+							<ul class="level_1">
+								<li><a href="/Etapy_sozdaniya_sayta.php" title="Как мы работаем | Этапы создания сайта">Как мы работаем | Этапы создания сайта</a></li>
+								<li><a href="/Portfolio.php" title="Портфолио">Портфолио</a></li>
+								<li><a href="/faq.php" title="Часто задаваемые вопросы | FAQs">Часто задаваемые вопросы | FAQs</a></li>
+								<li><a href="/Nashi_kontakty.php" title="Наши контакты и адреса">Наши контакты и адреса</a></li>
+								<li><a href="/Preimuschestva_LightDream.php" title="Преимущества веб-студии «Light Dream»">Преимущества веб-студии «Light Dream»</a></li>
+							</ul>
+						</li><li><a href="/Zakaz_uslug.php" title="Заказ услуг">Заказ услуг</a></li>
+						</ul>
+						<div style="clear:left"></div></div></div>
+
+
+
+			</div>
+				</article>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %}

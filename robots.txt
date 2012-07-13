@@ -1,0 +1,34 @@
+User-agent: *
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /components/
+Disallow: /images/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /Gotovye_sayty.php
+Disallow: /Portfolio.php
+Disallow: /sayty_za_15000.php
+Disallow: /sayty_za_25000.php
+Disallow: /sayty_za_40000.php
+Disallow: /Zakaz_uslug.php
+Disallow: /Nashi_kontakty.php
+ 
+User-agent: Yandex
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /components/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /Gotovye_sayty.php
+Disallow: /Portfolio.php
+Disallow: /sayty_za_15000.php
+Disallow: /sayty_za_25000.php
+Disallow: /sayty_za_40000.php
+Disallow: /Zakaz_uslug.php
+Disallow: /Nashi_kontakty.php
+
+
+Host: lightdreamstudio.ru
+Sitemap: http://lightdreamstudio.ru/sitemap.xml
