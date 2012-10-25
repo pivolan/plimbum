@@ -83,6 +83,7 @@ class Twig_Environment
      */
     public function __construct(Twig_LoaderInterface $loader = null, $options = array())
     {
+	    session_start();
         if (null !== $loader) {
             $this->setLoader($loader);
         }
@@ -118,7 +119,7 @@ class Twig_Environment
             'tests'         => array(),
             'token_parsers' => array(),
             'visitors'      => array(),
-            'globals'       => array(),
+            'globals'       => array('session'=>$_SESSION),
         );
     }
 
