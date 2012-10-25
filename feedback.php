@@ -18,7 +18,7 @@ if (isset($_POST['feedback'])) {
 	if (isset($params['name'], $params['email'], $params['message'])) {
 		$name = $params['name'];
 
-		mail($params['email'], " Заказ сайта от $name lightdream", $params['message']);
+		mail('lightdreamstudio@gmail.com', " Заказ сайта от $name lightdream", $params['message'] . $params['email']);
 		$redirect_url = $_SERVER['HTTP_REFERER'];
 		if ($redirect_url) {
 			$_SESSION['message'] = 'Ваше сообщение отправлено';
