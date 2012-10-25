@@ -252,40 +252,32 @@
 		<div class="grid-box width100 grid-v">
 			<div class="module mod-box mod-box-color icon-bubble">
 				<div class="deepest">
-					<h3 class="module-title"><span class="icon icon-bubble"></span><span class="color">Fast</span> Quote
+					<h3 class="module-title"><span class="icon icon-bubble"></span><span class="color">Обратная</span> связь
 					</h3>
 
 					<form name="ChronoContact_fastfront" id="ChronoContact_fastfront" method="post" action="" class="box style">
 						<table border="0" width="100%" class="">
 							<tr>
-								<td valign="top">Your Name : <br> <input type="text" name="Name" size="30"></td>
+								<td valign="top">ФИО : <br> <input type="text" name="feedback[Name]" size="30"></td>
 							</tr>
 							<tr>
-								<td valign="top">Your Email : <br> <input type="text" name="Email" size="30"></td>
+								<td valign="top">Email : <br> <input type="text" name="feedback[Email]" size="30"></td>
 							</tr>
 							<tr>
-								<td valign="top">Phone :<br> <input type="text" name="Phone" size="30"></td>
+								<td valign="top">Телефон :<br> <input type="text" name="feedback[Phone]" size="30"></td>
 							</tr>
 							<tr>
-								<td valign="top">Your Message :<br>
-									<textarea rows="5" name="Message" cols="32"></textarea></td>
-							</tr>
-							<tr>
-								<td valign="top">Security Code :<br>
-									<input name="chrono_verification" style="vertical-align:top;" type="text" id="chrono_verification" class="inputbox" value=""/>
-									&nbsp;&nbsp;<img src="/components/com_chronocontact/chrono_verification.php?imtype=0" alt=""/>
-								</td>
+								<td valign="top">Сообщение :<br>
+									<textarea rows="5" name="feedback[Message]" cols="32"></textarea></td>
 							</tr>
 							<tr>
 								<td><br>
-
 									<div align="center">
-										<input type="submit" value="Get A Free Quote!" class="button"></div>
+										<input type="submit" value="Отправить" class="button"></div>
 								</td>
 							</tr>
 						</table>
-						<input type="hidden" name="0a4fdc6c8ca15996474ddd677d99f2bd" value="1"/>
-						<input type="hidden" name="1cf1" value="2a7d20c31e8d4495f58ba0313860e6ab"/>
+						<input type="hidden" name="feedback[{{csrf}}]" value="1"/>
 					</form>
 				</div>
 			</div>
