@@ -2,10 +2,15 @@
 <html lang="en-gb" dir="ltr">
 <head>
 
-		<meta charset="utf-8"/>
+	<meta charset="utf-8"/>
+	{% block keywords %}
 		<meta name="keywords" content="Разработка, создание, продвижение, сайт, ТОП, размещение, контекстная, реклама, услуги, веб-студия «Light Dream»"/>
+	{% endblock %}
+	{% block description %}
 		<meta name="description" content="Веб-студия «Light Dream»  предоставляет услуги по разработке и созданию сайтов. Услуги продвижения сайтов в ТОП. Профессиональное размещение контекстной рекламы в интернете."/>
-		<title>{% block title %}Разработка и создание сайтов в Ижевске | Продвижение сайтов в ТОП | Размещение контекстной рекламы | Веб-студия «Light Dream»{% endblock %}</title>
+	{% endblock %}
+
+	<title>{% block title %}Создание сайтов Ижевск | Продвижение сайтов в ТОП | Размещение контекстной рекламы | Веб-студия «Light Dream»{% endblock %}</title>
 		{% include 'include/scripts.html.twig' %}
 		{% include 'include/stylesheets.html.twig' %}
 		{% block head_block %}{% endblock %}
