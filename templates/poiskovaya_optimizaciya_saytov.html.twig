@@ -2,16 +2,16 @@
 {% set b1 = 'active current' %}
 {% extends "Prodvizhenie_saytov.html.twig" %}
 {% block title %} Поисковая оптимизация сайтов. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="поисковая, оптимизация, сайт, seo, продвижение, внутренняя, услуга.">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description"
-	  content="Поисковая оптимизация сайта. Услуги поисковой оптимизации сайтов">{% endif %}
-{% endif %}
+	  content="поисковая, оптимизация, сайт, seo, продвижение, внутренняя, услуга.">
 {% endblock %}
+{% block description %}
+<meta name="Description"
+	  content="Поисковая оптимизация сайта. Услуги поисковой оптимизации сайтов">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

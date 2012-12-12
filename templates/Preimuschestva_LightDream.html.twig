@@ -2,16 +2,16 @@
 {% set b5 = 'active current' %}
 {% extends "web_studiya_Lightdream.html.twig" %}
 {% block title %} Преимущества создания и продвижения сайта в веб-студии «Light Dream». {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="преимущество, создание, продвижение, сайт веб-студия «Light Dream»">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description"
-	  content="Наши преимущества по созданию и продвижению сайтов перед конкурентами.">{% endif %}
-{% endif %}
+	  content="преимущество, создание, продвижение, сайт веб-студия «Light Dream»">
 {% endblock %}
+{% block description %}
+<meta name="Description"
+	  content="Наши преимущества по созданию и продвижению сайтов перед конкурентами.">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

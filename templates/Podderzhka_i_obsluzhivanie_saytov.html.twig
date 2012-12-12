@@ -1,16 +1,16 @@
 {% set a2 = 'active current' %}
 {% extends "layout.html.twig" %}
 {% block title %} Поддержка сайтов | Обслуживание сайтов. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="поддержка, обслуживание, сайт, услуга, работа, веб-студия «Light Dream».">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description"
-	  content="Комплекс работ по обслуживанию и поддержке вашего сайта. Услуга поддержки и обслуживания сайта от веб-студии «Light Dream»">{% endif %}
-{% endif %}
+	  content="поддержка, обслуживание, сайт, услуга, работа, веб-студия «Light Dream».">
 {% endblock %}
+{% block description %}
+<meta name="Description"
+	  content="Комплекс работ по обслуживанию и поддержке вашего сайта. Услуга поддержки и обслуживания сайта от веб-студии «Light Dream»">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

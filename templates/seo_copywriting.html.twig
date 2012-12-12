@@ -2,14 +2,14 @@
 {% set b4 = 'active current' %}
 {% extends "Prodvizhenie_saytov.html.twig" %}
 {% block title %} SEO копирайтинг | Написание текстов {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
-<meta name="Keywords" content="SEO копирайтинг, написание, текст, услуга, заказать, стоимость, контент">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description" content="SEO копирайтинг – написание продающих текстов. Веб-студия «Light Dream» предлагает услуги SEO копирайтинга. У нас вы можете заказать написание текстов для сайта.">{% endif %}
-{% endif %}
+
+{% block keywords %}
+<meta name="Keywords" content="SEO копирайтинг, написание, текст, услуга, заказать, стоимость, контент">
 {% endblock %}
+{% block description %}
+<meta name="Description" content="SEO копирайтинг – написание продающих текстов. Веб-студия «Light Dream» предлагает услуги SEO копирайтинга. У нас вы можете заказать написание текстов для сайта.">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

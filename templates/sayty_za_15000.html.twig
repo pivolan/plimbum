@@ -1,16 +1,16 @@
 {% set a4 = 'active current' %}
 {% extends "layout.html.twig" %}
 {% block title %} Шаблоны сайтов за 15000 руб. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="Шаблон, сайт, готовый 15000 руб.">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description"
-	  content="Шаблоны сайтов за 15000 руб">{% endif %}
-{% endif %}
+	  content="Шаблон, сайт, готовый 15000 руб.">
 {% endblock %}
+{% block description %}
+<meta name="Description"
+	  content="Шаблоны сайтов за 15000 руб">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

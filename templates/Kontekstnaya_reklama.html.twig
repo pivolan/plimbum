@@ -2,16 +2,16 @@
 {% set b3 = 'active current' %}
 {% extends "Prodvizhenie_saytov.html.twig" %}
 {% block title %} Контекстная реклама Яндекс, Google. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="Контекстная, реклама, Google, Яндекс.Директ, AdWords, услуга, Веб-студия «Light Dream», сайт.">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description"
-	  content="Контекстная реклама Яндекс, Google. Услуги разработки и проведения контекстной рекламной компании от веб-студии «Light Dream»">{% endif %}
-{% endif %}
+	  content="Контекстная, реклама, Google, Яндекс.Директ, AdWords, услуга, Веб-студия «Light Dream», сайт.">
 {% endblock %}
+{% block description %}
+<meta name="Description"
+	  content="Контекстная реклама Яндекс, Google. Услуги разработки и проведения контекстной рекламной компании от веб-студии «Light Dream»">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

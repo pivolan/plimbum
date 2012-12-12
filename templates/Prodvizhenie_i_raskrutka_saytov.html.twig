@@ -2,16 +2,16 @@
 {% set b2 = 'active current' %}
 {% extends "Prodvizhenie_saytov.html.twig" %}
 {% block title %} Продвижение и раскрутка сайтов. | Вывод сайта в ТОП. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="продвижение сайтов, раскрутка сайтов, стоимость, оптимизация, услуга, методы, вывод, топ.">{% endif %}
-{% if entry.excerpt %}
-<meta name="Description"
-	  content="Раскрутка и продвижение сайтов от Веб-студии «Light Dream». Вывод сайта в ТОП. Наши методы продвижения сайтов. Стоимость раскрутки и продвижения сайта.">{% endif %}
-{% endif %}
+	  content="продвижение сайтов, раскрутка сайтов, стоимость, оптимизация, услуга, методы, вывод, топ.">
 {% endblock %}
+{% block description %}
+<meta name="Description"
+	  content="Раскрутка и продвижение сайтов от Веб-студии «Light Dream». Вывод сайта в ТОП. Наши методы продвижения сайтов. Стоимость раскрутки и продвижения сайта.">
+{% endblock %}
+
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
 <div style="min-height: 2160px;" id="maininner" class="grid-box">

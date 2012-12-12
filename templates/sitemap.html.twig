@@ -1,15 +1,14 @@
 
 {% extends "layout.html.twig" %}
 {% block title %} Карта сайта. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+
+{% block keywords %}
 <meta name="Keywords"
-	  content="сайт, карта.">{% endif %}
-{% if entry.excerpt %}
+	  content="сайт, карта.">
+{% endblock %}
+{% block description %}
 <meta name="Description"
-	  content="Карта сайта Веб-студии Light Dream">{% endif %}
-{% endif %}
+	  content="Карта сайта Веб-студии Light Dream">
 {% endblock %}
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
@@ -39,6 +38,7 @@
 								<li><a href="/Prodvizhenie_i_raskrutka_saytov.php" title="Продвижение и раскрутка сайтов | Вывод сайта в ТОП">Продвижение и раскрутка сайтов | Вывод сайта в ТОП</a></li>
 								<li><a href="/Kontekstnaya_reklama.php" title="Контекстная реклама Яндекс, Google">Контекстная реклама Яндекс, Google</a></li>
 								<li><a href="/seo_copywriting.php" title="SEO копирайтинг | написание текстов">SEO копирайтинг | написание текстов</a></li>
+                                <li><a href="/nakrutka-prosmotrov-na-youtube.php" title="Продвижение и раскрутка видео на Youtube | Накрутка просмотров, подписок, лайков на Youtube">Продвижение и раскрутка видео на Youtube | Накрутка просмотров и лайков на Youtube</a></li>
 								<li><a href="/stoimost_sozdaniya_saytov.php" title="Цены на продвижение сайтов">Цены на продвижение сайтов</a></li>
 							</ul>
 						</li><li><a href="/Gotovye_sayty.php" title="Готовые сайты от веб-студии «Light Dream»">Готовые сайты от веб-студии «Light Dream»</a>

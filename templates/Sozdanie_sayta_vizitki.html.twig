@@ -1,15 +1,13 @@
 {% set a2 = 'active current' %}
 {% extends "layout.html.twig" %}
 {% block title %} Создание сайта визитки | Заказать сайт визиткy. {% endblock %}
-{% block head_block %}
-{% if entry %}
-{% if entry.strtags %}
+{% block keywords %}
 <meta name="Keywords"
-	  content="создание, сайт-визитка, сайт, визитка, заказать, услуги, веб-студия NNN, стоимость.">{% endif %}
-{% if entry.excerpt %}
+	  content="создание, сайт-визитка, сайт, визитка, заказать, услуги, веб-студия NNN, стоимость.">
+{% endblock %}
+{% block description %}
 <meta name="Description"
-	  content="Услуги создания сайта визитки от веб-студии «Light Dream» в Ижевске и по России. У нас вы можете заказать сайт визитку.">{% endif %}
-{% endif %}
+	  content="Услуги создания сайта визитки от веб-студии «Light Dream» в Ижевске и по России. У нас вы можете заказать сайт визитку.">
 {% endblock %}
 {% block top_a %}{% endblock %}{% block top_b %}{% endblock %}{% block top_c %}{% endblock %}
 {% block content %}
