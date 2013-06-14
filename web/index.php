@@ -13,4 +13,4 @@ $twig = new Twig_Environment($loader, array(
     'debug' => true
 ));
 
-echo $twig->render('base.html.twig');
+echo $twig->render('pages/index.html.twig');
