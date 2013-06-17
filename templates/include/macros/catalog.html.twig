@@ -1,0 +1,16 @@
+{% macro item(name, img, price, url) %}
+    <li class="item first">
+        <a class="product-image" title="{{ name }}" href="{{ url }}">
+            <img width="135" height="135" alt="{{ name }}" src="{{ img | default('/img/assorted_rhinestones.jpg') }}">
+        </a>
+
+        <h2 class="product-name">
+            <a title="{{ name }}" href="/">{{ name }}</a></h2>
+
+        <div class="price-box">
+                    <span id="product-price-401" class="regular-price">
+                        <span class="price">{{ price }}</span
+                    </span>
+        </div>
+    </li>
+{% endmacro %}
