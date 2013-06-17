@@ -8115,3 +8115,25 @@ a.button:hover span, button.button:hover span span {
 	background: none;
 	color: #575757
 }
+
+div.std > p {
+	color: #808080;
+	font-size: medium;
+}
+
+div.std > h2 {
+	color: black;
+	font-size: large;
+}
+
+div.std > ul > li {
+	margin-left: 20px;
+	color: #808080;
+	font-size: medium;
+}
+
+div.std > ol > li {
+	margin-left: 20px;
+	color: #808080;
+	font-size: medium;
+}
