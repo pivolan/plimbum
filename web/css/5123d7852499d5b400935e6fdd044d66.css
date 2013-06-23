@@ -8115,25 +8115,35 @@ a.button:hover span, button.button:hover span span {
 	background: none;
 	color: #575757
 }
-
+div.std {
+	padding: 10px;
+}
 div.std > p {
 	color: #808080;
-	font-size: medium;
+	font-size: 14px;
 }
 
-div.std > h2 {
+div.std > h1, div.std > h2, div.std > h3, div.std > h4, div.std > h5 {
 	color: black;
-	font-size: large;
+	font-size: 17px;
+}
+
+div.std > h1{
+	font-size: 20px;
+}
+
+div.std > h3{
+	font-size: 16px;
 }
 
 div.std > ul > li {
 	margin-left: 20px;
 	color: #808080;
-	font-size: medium;
+	font-size: 14px;
 }
 
 div.std > ol > li {
 	margin-left: 20px;
 	color: #808080;
-	font-size: medium;
+	font-size: 14px;
 }
